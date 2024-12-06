@@ -1,0 +1,203 @@
+#startGame {
+  background-color: rgb(9, 209, 26);
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: bold;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: 2px solid rgb(204, 174, 4);
+  cursor: pointer;
+  
+  /* Efecto de relieve */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), 
+              inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+              inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+  
+  /* Transición para efecto suave al hacer clic */
+  transition: all 0.2s ease;
+  
+}
+
+
+
+#startGame:hover{
+  /* Efecto de hundimiento cuando se presiona */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 
+              inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+  transform: translateY(2px);
+
+}
+
+#cleanBet {
+  background-color: red;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: bold;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid rgb(204, 174, 4);
+  
+  /* Efecto de relieve */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), 
+              inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+              inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.2s ease;
+}
+
+#cleanBet:hover {
+  /* Efecto de hundimiento cuando se presiona */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 
+              inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+  transform: translateY(2px);
+}
+
+#stand {
+  background-color: red;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: bold;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid rgb(204, 174, 4);
+  
+  /* Efecto de relieve */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), 
+              inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+              inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.2s ease;
+}
+
+#stand:hover {
+  /* Efecto de hundimiento cuando se presiona */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 
+              inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+  transform: translateY(2px);
+}
+
+#doubleBet {
+  background-color: rgb(17, 66, 158);
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: bold;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid rgb(204, 174, 4);
+
+  /* Efecto de relieve */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), 
+              inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+              inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.2s ease;
+}
+
+#doubleBet:hover {
+  /* Efecto de hundimiento cuando se presiona */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 
+              inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+  transform: translateY(2px);
+}
+
+#newCard {
+  background-color: rgb(29, 172, 13);
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: bold;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid rgb(204, 174, 4);
+
+  /* Efecto de relieve */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), 
+              inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+              inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.2s ease;
+}
+
+#newCard:hover {
+  /* Efecto de hundimiento cuando se presiona */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 
+              inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+  transform: translateY(2px);
+}
+
+.button-group {
+  display: flex !important;
+  gap: 10px;
+}
+
+  button {
+    display: flex;
+    flex-direction: column; /* Alinea el contenido de los botones en una columna (icono y texto) */
+    align-items: center; /* Centra el icono y el texto */
+    border: none;
+    background-color: transparent; /* Sin fondo para el botón */
+    cursor: pointer;
+  }
+  
+  button img {
+    margin-bottom: 5px; /* Añade espacio entre la imagen y el texto */
+  }
+  
+  button span {
+    font-size: 14px; /* Tamaño del texto debajo de los botones */
+    color: white; /* Color del texto */
+  }
+  
+
+
+  /* here is the button of playing */
+
+
+  
+  
+
+
+.all-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Asegura que los botones se envuelvan si el espacio es insuficiente */
+    margin-bottom: 20px;
+   
+    
+  }
+  
+  .button-group {
+    margin-right: 20px; /* Espacio entre el grupo de botones y los otros botones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Asegura que los botones se envuelvan si el espacio es insuficiente */
+    cursor: pointer;
+
+  }
+
+  
+.all-buttons button{
+    margin-left: 10px;
+    
+  }
+  
+
+  .button-play {
+    display: flex;
+    justify-content: center; /* Centra el grupo de botones horizontalmente */
+    gap: 20px; /* Espacio entre botones */
+    margin-top: 20px; /* Añadir un poco de espacio en la parte superior */
+  }
+

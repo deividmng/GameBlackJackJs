@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script  src="sritpt.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header grid">
+        <div class="chips">
+            <p id="chips-display"></p>
+          </div>
+      <div class="progress-bar-container">
+        <span id="left-number" class="bordered">0</span>
+        <div class="progress-bar borderedBar">
+          <div id="fill-bar" class="progress"></div>
+        </div>
+        <span id="right-number" class="bordered">100</span>
+      </div>
+    </header>
+
+    <main class="gird">
+
+ <section id="dealer-container">
+    <div id="player-dealer" class="player-dealer">
+        <div id="message-delaler">
+            <h1>aqui va el mensaje</h1>
+        </div>
+    </div>
+    <div id="sum-dealer">
+         <!-- Aquí se actualizará el total del dealer -->
+    </div>
+    <div id="cards-delealer">
+        <!-- Aquí se mostrarán las cartas del dealer -->
+    </div>
+</section>
+<p id="message-game">ddddddd</p>
+<section id="player">
+    <p id="message-player">
+        <h1>aqui va el mensaje</h1>
+    </p>
+    <div id="cards-player">
+        <!-- Aquí se mostrarán las cartas del jugador -->
+    </div>
+    <div id="sum-player">
+        <!-- Aquí se actualizará el total del jugador -->
+    </div>
+</section>
+
+
+    <div id="buttons-bet">
+     <div class="button-group">
+      <button id="startGame" onclick="startGame()">
+        <span>Deal</span>
+      </button>
+      <button id="cleanBet" onclick="cleanBet()"><span>Clear</span></button>
+    </div>
+    <div id="img-chips"></div>
+
+    <h1 id="PlaceBet" class="PlaceBet">Place Your Bet</h1>
+
+    <section id="">
+      <div id="bet-buttons" class="bet-buttons">
+        <div class="allArrows"></div>
+      </div>
+    </section>
+
+    <section class="button-play">
+      <button id="stand" onclick="stand()">
+        <span>STAND</span>
+    </button>
+      <button id="doubleBet" onclick="doubleBet()">
+        <span>DOUBLE BET</span>
+      </button>
+      <button id="newCard" onclick="newCard()">
+        <span>NEW CARD</span>
+    </button>
+    </section>
+
+    
+    <div id="img-chips">
+        <div id="betContainer">
+  
+          <img id="betImage" src="./img/chip.png" alt="Bet Image">
+          <p id="betSum">0</p>
+        </div>
+      </div>
+    </div>
+
+
+  
+
+    <div class="main-bet grid">
+
+        <section id="bet-buttons">
+            <div class="allArrows">
+                
+                <img src="./img/arrow_downward_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" class="add5px" alt="Additional Image">
+                <img src="./img/arrow_downward_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" class="add5px" alt="Additional Image">
+                <img src="./img/arrow_downward_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" class="add5px" alt="Additional Image">
+                <img src="./img/arrow_downward_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" class="add5px" alt="Additional Image">
+                <img src="./img/arrow_downward_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" class="add5px" alt="Additional Image">
+                <img src="./img/arrow_downward_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" class="add5px" alt="Additional Image">
+                
+            </div>
+    
+    
+            <div class="img-bet">
+                <div class="bet-button" id="bet-five-btn" onclick="bet(5)">
+                    <img src="./img/chip.png" alt="Bet 5">
+                    <span>5</span>
+                </div>
+                <div class="bet-button" id="bet-ten-btn" onclick="bet(10)">
+            <img src="./img/chip.png" alt="Bet 10">
+            <span>10</span>
+        </div>
+        <div class="bet-button" id="bet-twentyfive-btn" onclick="bet(25)">
+            <img src="./img/chip.png" alt="Bet 25">
+            <span>25</span>
+        </div>
+        <div class="bet-button" id="bet-fifty-btn" onclick="bet(50)">
+            <img src="./img/chip.png" alt="Bet 50">
+            <span>50</span>
+        </div>
+        <div class="bet-button" id="bet-hundred-btn" onclick="bet(100)">
+            <img src="./img/chip.png" alt="Bet 100">
+            <span>100</span>
+        </div>
+        <div class="bet-button" id="bet-twofifty-btn" onclick="bet(250)">
+            <img src="./img/chip.png" alt="Bet 250">
+            <span>250</span>
+        </div>
+    </div>
+    </section>
+</div>
+    
+      <p id="counter-el">Next chips in: 60s</p> 
+
+</main>
+  </body>
+</html>

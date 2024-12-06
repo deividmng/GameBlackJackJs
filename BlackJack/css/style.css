@@ -1,0 +1,130 @@
+
+@import url("./buttons.css");
+@import url("./bar.css");
+@import url("./placeBet.css");
+@import url("./bet.css");
+
+
+#cards-delealer, #cards-player {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #353535;
+    color: #fff;
+  }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+  
+
+  
+  .chips {
+    grid-column: 1; /* Asigna la primera columna */
+  }
+  
+  .progress-bar-container {
+    grid-column: 12; /* Asigna la segunda columna */
+    display: flex; /* Opcional: organiza su contenido internamente */
+    align-items: center; /* Alinea internamente los elementos */
+    justify-content: flex-end; /* Coloca la barra hacia el extremo derecho */
+   
+  }
+  
+
+  #dealer-container {
+    grid-column: 1 / span 12;
+    text-align: center;
+  }
+
+  #player {
+    grid-column: 1 / span 12;
+    text-align: center;
+  }
+
+
+  #buttons-bet{
+    grid-column: 1 / span 12;
+    text-align: center;
+  }
+
+
+  #betContainer {
+  position: relative;
+  display: inline-block;
+}
+
+ /* remember to display when u done the bet */
+#img-chips {
+  display: grid;
+  place-items: center;
+  display: flex;
+}
+
+#message-game {
+  text-align: center;
+}
+
+#betContainer {
+  position: relative;
+  display: grid; /* Puedes usar grid para manejar los elementos internos si es necesario */
+  place-items: center; /* Centra los hijos del contenedor */
+}
+
+#betImage {
+  display: block;
+  height: 60px;
+  grid-area: 1 / 1; /* Se superpone en la misma celda */
+}
+
+#betSum {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+  grid-area: 1 / 1; /* Se superpone con la imagen en la celda */
+}
+
+
+.main-bet {
+  display: grid;
+  place-items: center; /* Centra los elementos horizontal y verticalmente */
+
+  grid-template-columns: repeat(1, 1fr); /* 3 columnas para distribuir las apuestas */
+}
+
+#bet-buttons {
+ display: block;
+ 
+}
+.bet-button {
+  display: grid;
+  place-items: center; /* Centra el texto e imagen dentro de cada botón */
+  text-align: center;
+}
+
+.allArrows {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaciado entre flechas */
+  margin-bottom: 20px; /* Margen para separar las flechas de los botones */
+}
+
+
+.img-bet {
+  display: flex;
+  margin-left: 15px;
+  gap: 5px;
+}
